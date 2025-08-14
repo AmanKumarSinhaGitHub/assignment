@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaGlobe } from "react-icons/fa";
 import { FC } from "react";
 
 interface SocialLink {
@@ -17,6 +17,12 @@ const Footer: FC<FooterProps> = ({ className = "" }) => {
   const currentYear: number = new Date().getFullYear();
 
   const socialLinks: SocialLink[] = [
+    {
+      href: "https://aman-kumar-sinha.vercel.app/",
+      icon: FaGlobe,
+      label: "Website",
+      external: true,
+    },
     {
       href: "https://github.com/AmanKumarSinhaGitHub",
       icon: FaGithub,
