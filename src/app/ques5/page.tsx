@@ -1,7 +1,7 @@
 
 const Page = () => {
   return (
-    <div>page</div>
+    <div>Working on it.</div>
   )
 }
 
